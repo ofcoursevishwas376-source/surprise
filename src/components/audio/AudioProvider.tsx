@@ -43,7 +43,7 @@ export function AudioProvider({ children }: { children: ReactNode }) {
     setMuted(false);
     const a = audioRef.current;
     if (a) {
-      a.volume = 0.4;
+      a.volume = 1.0;
       console.log('Starting audio with volume 0.4');
       a.play().then(() => console.log('Audio started in start')).catch((e) => console.log('Audio start failed:', e));
     }
